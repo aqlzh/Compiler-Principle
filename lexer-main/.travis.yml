@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - 14.17.5
+
+script:
+  - npm install uglify-js -g
+  - bash shell/pack.sh
+  - bash shell/test.sh
+
+branches:
+  only:
+    - main
+    - testing
