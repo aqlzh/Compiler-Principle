@@ -1,0 +1,18 @@
+#include<string>
+#include<iostream>
+using namespace std;
+int main03()
+{
+	string str;
+	// 设置一个终止符
+	getline(cin, str, '#');
+	cout << str << ' ' << endl;
+
+
+	string strName = "Hello World!";
+	int i = 2;
+	char c = strName.operator [](2);
+	cout << c << endl;
+
+	return 0;
+}
