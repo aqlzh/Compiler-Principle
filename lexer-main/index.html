@@ -156,6 +156,7 @@
 
         .token.token-String {
             background: #d68e0a;
+
         }
 
         .token.token-Char {
@@ -279,6 +280,8 @@
 
     // Parsing params in url
     function getParam(param) {
+
+        
         let slices = window.location.href.split('?');
         if (slices[1]) {
             let searchString = slices[1];
